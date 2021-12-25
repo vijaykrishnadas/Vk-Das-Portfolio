@@ -3,6 +3,8 @@ import "./projects.css"
 
 import proj1 from "../project-img/1.JPG"
 import proj2 from "../project-img/2.JPG"
+import proj3 from "../project-img/3.JPG"
+
 
 const Projects = () => {
     return (
@@ -10,6 +12,18 @@ const Projects = () => {
             <div className="project-title">
                  <h1>Projects Showcase</h1>
             </div>
+            <div className="project-item p1">
+                <div className="project-card">
+                    <div className="project-browser">
+                        <div className="project-circle"></div>
+                        <div className="project-circle"></div>
+                        <div className="project-circle"></div>
+                    </div>
+                    <img className="project-img" src={proj3} alt="" />
+                </div>
+                <p className="project-description">This is a live and running website for a finance app. The app allows you to invest your savings for a healthy return.</p>
+                </div>
+                <div className="line"></div>
             <div className="projects-wrapper">
                 <div className="project-item">
                 <div className="project-card">

@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm('service_zx20hdh', 'template_42653dd', formRef.current, 'user_PjStWfbukuOioJgEcFMkf')
-      .then((result) => {
+      .then((t) => {
           setOpenModal(true);
       }, (error) => {
           console.log(error.text);
@@ -45,14 +45,13 @@ const Contact = () => {
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <h2>To say Hi...</h2>
                     <h1 className="contact-subtitle">Kindly fill up this form</h1>
-                    <input type="text" placeholder="Enter Name" name="user_name" />
-                    <input type="text" placeholder="Enter Subject" name="user_subject" />
-                    <input type="text" placeholder="Enter Email ID" name="user_email" />
-                    <textarea placeholder="Enter Message...." name="user_message" id="" cols="30" rows="10"></textarea>
+                    <input required type="text" placeholder="Enter Name" name="user_name" />
+                    <input required type="text" placeholder="Enter Subject" name="user_subject" />
+                    <input required type="text" placeholder="Enter Email ID" name="user_email" />
+                    <textarea required placeholder="Enter Message...." name="user_message" id="" cols="30" rows="10"></textarea>
                     <button>Send Message</button>
                 </form>
             </div>
-            <button onClick={()=>{ setOpenModal(true) }}>Click Me</button>
             {openModal && <Modal closeModal={setOpenModal} />}
         </div>
     )

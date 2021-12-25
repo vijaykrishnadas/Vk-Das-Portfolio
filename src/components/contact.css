@@ -37,6 +37,8 @@
     font-size: 30px;
     color: #EDEDED;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact-icon{
@@ -63,6 +65,7 @@ form{
 }
 input, textarea{
     padding: 10px;
+    font-size: 16px;
 }
 
 input:focus, textarea:focus{

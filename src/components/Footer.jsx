@@ -4,7 +4,7 @@ import "./footer.css"
 const Footer = () => {
     return (
         <div className="footer">
-            <h4>copyright@vijaykrishndas.comcd</h4>
+            <h4>copyright@vijaykrishndas.com</h4>
         </div>
     )
 }
