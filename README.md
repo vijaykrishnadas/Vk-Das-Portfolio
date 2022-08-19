@@ -1,14 +1,15 @@
-# Portfolio
+# Personal Portfolio 😊
 
 A beautifully designed personal portfolio website describing Myself.
 
 Currently Live @ 
 
 ```
-  www.vijaykrishnadas.com
+https://vijaykrishnadas.com/
 ```
 
 ## Technologies Used
 
 - React.js
+- CSS
 - Email.js
